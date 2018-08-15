@@ -35,6 +35,7 @@ class Droppable extends React.Component {
   }
 
   onDrop = () => {
+    console.log(store.getState());
     const { data, type, isDragging } = store.getState()
     if (isDragging) {
       if (Array.isArray(this.props.accepts)) {
